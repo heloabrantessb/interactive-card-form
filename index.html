@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <main>
+    <picture>
+      <source media="(min-width: 1440px)"srcset='./images/bg-main-desktop.png'>
+      <img src="./images/bg-main-mobile.png" alt="">
+    </picture>
+
+    <!-- Melhor ideia em tranformar os cartões em divs com o background image e com p dentro da div -->
+    <div class="card-section">
+      <img src="./images/bg-card-back.png" alt="">
+      <img src="./images/bg-card-front.png" alt="">
+    </div>
+
+
+    <form action="#" method="post">
+      <label for="name">Cardholder name</label><br>
+      <input type="text" id="name" placeholder="e.g. Jane"><br>
+
+      <label for="number">Card number</label><br>
+      <input type="number" placeholder="e.g. 1234 5678 9123 0000"><br> 
+
+      <label for="month">Exp.date</label><br>
+      <input type="number" name="month" id="month" placeholder="MM">
+      <label for="year">(MM/YY)</label><br>
+      <input type="number" name="year" id="year" placeholder="YY">
+
+      <label for="cvc">CVC</label><br>
+      <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+    </form>
+  </main>
+  
+</body>
+</html>
